@@ -134,7 +134,7 @@ rf_model = pickle.load(open('best_Random Forest_model.pkl', 'rb'))
 
 # Streamlit app setup
 st.set_page_config(page_title="Cattle Antibody Pairing Predictor", page_icon="cattle_antibody_1.png")
-st.image("cattle_antibody_2.png", use_column_width=True)
+st.image("cattle_antibody_2.png", use_container_width=True)
 st.title("Cattle Antibody Pairing Predictor")
 st.subheader("Authors: Anthony Onoja, Nophar Geifman, Marie Di Placido, Bharti Mittal, John Hammond, Nicos Angelopoulos")
 
