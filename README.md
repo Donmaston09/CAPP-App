@@ -33,7 +33,7 @@ Sample Data Format
 AA_H,CDR3_H,AA_L,CDR3_L
 QVESDREAQWKELKELSXSXSAQASEKDJKDJDLDJ,CDEFGHIKLMNPQRSTVWY,QWKEKEKDKLDKWJDGFRHSJWGS,CDEFGHIKLMNPQRSTVWY
 
-Authors
+Authors:
 Anthony Onoja, Nophar Geifman, Marie Di Placido, Bharti Mittal, John Hammond, Nicos Angelopoulos
 License
 MIT License
