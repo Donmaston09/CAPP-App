@@ -136,7 +136,7 @@ rf_model = pickle.load(open('best_Random Forest_model.pkl', 'rb'))
 st.set_page_config(page_title="Cattle Antibody Pairing Predictor", page_icon="cattle_antibody_1.png")
 st.image("cattle_antibody_2.png", use_container_width=True)
 st.title("Cattle Antibody Pairing Predictor")
-st.subheader("Authors: Anthony Onoja, Nophar Geifman, Marie Di Placido, Bharti Mittal, John Hammond, Nicos Angelopoulos")
+st.subheader("Authors: Anthony Onoja, Bharti Mittal, Nophar Geifman, John Hammond, Marie Bonnet-Di Placido")
 
 st.write("""
 Welcome to the Cattle Antibody Pairing Predictor web app! This tool uses machine learning to predict the pairing status of heavy and light chains in cattle antibody sequences. It leverages physiochemical properties of CDR3 regions (length, instability, hydrophobicity, isoelectric point, cysteine count, net charge, and structural compatibility) to predict pairing preferences (High or Low) based on pLDDT scores (>0.80 for High in ultralong sequences). Logistic Regression is the best-performing model, but users can also select Random Forest.
