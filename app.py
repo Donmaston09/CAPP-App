@@ -314,16 +314,16 @@ if csv_file:
             st.download_button("Download Frequency Counts", data=open(output_file_path, 'rb'), file_name="prediction_frequency_results.csv")
             st.success("Prediction Frequency ready for download!")
 
-        with st.expander("Prediction Count (Heavy and Light CDR3)"):
-            fig, ax = plt.subplots(figsize=(14, 10))
-            color_map = {'High': 'darkred', 'Low': 'darkblue'}
-            for preference in color_map.keys():
-                subset = final_df[final_df['Prediction'] == preference]
-                ax.scatter(subset['Frequency_count_CDR3_L'], subset['Frequency_count_CDR3_H'], c=color_map[preference], label=preference, alpha=0.6)
-            ax.set_xlabel('Number of CDR3_L', fontsize=20)
-            ax.set_ylabel('Number of CDR3_H', fontsize=20)
-            ax.tick_params(axis='both', labelsize=20)
-            ax.grid(False)
-            ax.legend(title='Pairing preference', fontsize=18, title_fontsize=20)
-            st.pyplot(fig)
-            plt.close()
+        #with st.expander("Prediction Count (Heavy and Light CDR3)"):
+         #   fig, ax = plt.subplots(figsize=(14, 10))
+         #   color_map = {'High': 'darkred', 'Low': 'darkblue'}
+         #   for preference in color_map.keys():
+        #        subset = final_df[final_df['Prediction'] == preference]
+         #       ax.scatter(subset['Frequency_count_CDR3_L'], subset['Frequency_count_CDR3_H'], c=color_map[preference], label=preference, alpha=0.6)
+       #     ax.set_xlabel('Number of CDR3_L', fontsize=20)
+        #    ax.set_ylabel('Number of CDR3_H', fontsize=20)
+       #     ax.tick_params(axis='both', labelsize=20)
+       #     ax.grid(False)
+       #     ax.legend(title='Pairing preference', fontsize=18, title_fontsize=20)
+       #     st.pyplot(fig)
+      #      plt.close()
